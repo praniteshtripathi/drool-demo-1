@@ -18,7 +18,9 @@ public class JewelleryShopController {
 	public JewelleryShopController(JewelleryShopService jewelleryShopService) {
 		this.jewelleryShopService = jewelleryShopService;
 	}
-
+	//http://localhost:8080/getDiscount?type=gold
+	//or
+	//http://localhost:8080/getDiscount?type=diamond	
 	@RequestMapping(value = "/getDiscount", method = RequestMethod.GET, produces = "application/json")
 	public Product getQuestions(@RequestParam(required = true) String type) {
 
